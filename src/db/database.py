@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 from types import TracebackType
-from typing import Hashable, Any, List, Tuple, MutableMapping
+from typing import Hashable, Any, List, Tuple, MutableMapping, Optional, Type
 
 import aiofiles
 
@@ -11,7 +11,6 @@ from os.path import basename
 from aiofiles.base import AiofilesContextManager
 from db.exceptions import KeyAlreadyExist
 from db.utils import catch_exception, deep_update, deep_search_by_pair
-from typing_extensions import Optional, Type
 
 
 class Connection:
