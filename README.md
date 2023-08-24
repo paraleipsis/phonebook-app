@@ -12,6 +12,8 @@ built with Aiohttp, Typer and providing the following features:
 - Ability to perform CRUD operations with entry's in Phonebook API with HTTP requests or CLI app
 - Ability to perform search queries for entry's by one or more characteristics
 
+Database example located in src/data/phonebook.json
+
 ## Installation
 
 - Clone this repository and navigate to it:
