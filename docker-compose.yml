@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  api:
+    build: .
+    container_name: phonebook-api
+    command: python3 src/core/main.py
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/phonebook-app
+
+networks:
+  phonebook-app:
