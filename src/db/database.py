@@ -9,8 +9,8 @@ from io import UnsupportedOperation
 from os.path import basename
 
 from aiofiles.base import AiofilesContextManager
-from src.db.exceptions import KeyAlreadyExist
-from src.db.utils import catch_exception, deep_update, deep_search_by_pair
+from db.exceptions import KeyAlreadyExist
+from db.utils import catch_exception, deep_update, deep_search_by_pair
 from typing_extensions import Optional, Type
 
 

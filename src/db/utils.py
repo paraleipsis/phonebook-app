@@ -2,7 +2,7 @@ from functools import wraps
 from asyncio.exceptions import CancelledError
 from typing import Hashable
 
-from src.logger.logs import logger
+from logger.logs import logger
 from os import listdir
 from os.path import isfile, join, abspath
 

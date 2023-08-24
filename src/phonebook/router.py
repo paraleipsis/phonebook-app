@@ -1,4 +1,4 @@
-from src.phonebook.api import entry
+from phonebook.api import entry
 
 
 def setup_routes(app):

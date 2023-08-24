@@ -1,11 +1,11 @@
 import functools
 
 from aiohttp import web
-from src.modules.exceptions.api_exceptions import InvalidPageNum
+from modules.exceptions.api_exceptions import InvalidPageNum
 
-from src.modules.schemas import response_schemas as schemas
-from src.logger.logs import logger
-from src.phonebook.exceptions import NoSuchEntry
+from modules.schemas import response_schemas as schemas
+from logger.logs import logger
+from phonebook.exceptions import NoSuchEntry
 
 
 def manage_exceptions(func):

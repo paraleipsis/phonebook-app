@@ -4,10 +4,10 @@ from aiohttp import web
 from aiohttp_pydantic import PydanticView
 from aiohttp_pydantic.oas.typing import r200
 
-from src.modules.schemas import response_schemas as schemas
-from src.modules.utils.api_utils import manage_exceptions
-from src.phonebook.schemas import entry_schemas
-from src.phonebook.services import entry_service
+from modules.schemas import response_schemas as schemas
+from modules.utils.api_utils import manage_exceptions
+from phonebook.schemas import entry_schemas
+from phonebook.services import entry_service
 
 
 class EntryCollectionView(PydanticView):

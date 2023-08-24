@@ -1,12 +1,12 @@
 from typing import List, Mapping
 
-from src.db.exceptions import KeyAlreadyExist
-from src.phonebook.db_session import get_session
-from src.modules.utils.utils import convert_obj_to_list, filter_none_values
-from src.modules.utils.api_utils import paginator
-from src.phonebook.exceptions import NoSuchEntry
-from src.phonebook.schemas.entry_schemas import EntryCreate
-from src.phonebook.utils import generate_id
+from db.exceptions import KeyAlreadyExist
+from phonebook.db_session import get_session
+from modules.utils.utils import convert_obj_to_list, filter_none_values
+from modules.utils.api_utils import paginator
+from phonebook.exceptions import NoSuchEntry
+from phonebook.schemas.entry_schemas import EntryCreate
+from phonebook.utils import generate_id
 
 
 async def get_entry_list(page_num: int, page_size: int, **kwargs) -> List[Mapping]:

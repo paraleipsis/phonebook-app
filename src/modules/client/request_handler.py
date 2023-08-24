@@ -5,8 +5,8 @@ from typing import Generator, MutableMapping, Optional, Any, Mapping, Type
 import aiohttp
 from aiohttp import ClientConnectorError, ClientResponse
 
-from src.logger.logs import logger
-from src.modules.client.utils import httpize
+from logger.logs import logger
+from modules.client.utils import httpize
 
 
 class ClientRequestHandler:

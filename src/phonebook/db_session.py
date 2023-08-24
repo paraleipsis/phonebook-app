@@ -1,4 +1,4 @@
-from src.db.database import Database
+from db.database import Database
 from typing import Optional
 
 _db_session: Optional[Database]

@@ -1,10 +1,10 @@
 from aiohttp import web
 
-from src.conf.settings import DB_LOCATION, HOST, PORT
-from src.core.startup_tasks import init_routes, init_db_session, create_db
+from conf.settings import DB_LOCATION, HOST, PORT
+from startup_tasks import init_routes, init_db_session, create_db
 import asyncio
 
-from src.db.database import Database
+from db.database import Database
 
 
 def pre_init() -> None:

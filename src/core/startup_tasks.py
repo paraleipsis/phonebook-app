@@ -4,9 +4,9 @@ from pathlib import Path
 
 from aiohttp import web
 
-from src.phonebook.router import setup_routes as setup_phonebook_routes
-from src.phonebook.db_session import setup_session as setup_phonebook_session
-from src.db.database import Database
+from phonebook.router import setup_routes as setup_phonebook_routes
+from phonebook.db_session import setup_session as setup_phonebook_session
+from db.database import Database
 
 
 def init_routes(application: web.Application) -> None:
