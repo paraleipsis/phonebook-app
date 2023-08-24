@@ -1,0 +1,2 @@
+class InvalidPageNum(Exception):
+    pass
