@@ -56,6 +56,10 @@ After installing, you can use CLI to access the API:
 python3 src/cli/main.py --help
 ```
 
+Example output of entry's list:
+
+![Image alt](https://github.com/paraleipsis/repo_images/raw/main/phonebook/phonebook_example.png)
+
 ## Configuration 
 
 Project configuration available through environment variables or /conf/config file:
